@@ -1,0 +1,108 @@
+.data {
+  display: inline-block;
+  text-align: left;
+  padding: 20px 80px 20px 80px;
+}
+
+.data label {
+  font-weight: bold;
+}
+
+.data input {
+  float: right;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 120px;
+}
+
+.data input:focus {
+  outline: none;
+  border-color: #3B64CE;
+  box-shadow: 0 0 0 2px rgba(59, 100, 206, 0.2);
+}
+
+.data input:disabled {
+  background-color: #f8f9fa;
+  cursor: not-allowed;
+}
+
+.data .row {
+  clear: both;
+  padding-top: 10px;
+}
+
+.data .form button {
+  margin-top: 2em;
+  display: inline;
+  background-color: #3B64CE;
+  border: 1px solid #3B64CE;
+  color: #FFF;
+  width: 100%;
+  text-align: center;
+  box-shadow: 2px 2px 2px #000000;
+  line-height: 2;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.data .form button:hover:not(:disabled) {
+  background-color: #504869;
+  border: 1px solid #504869;
+}
+
+.data .form button:active:not(:disabled) {
+  background-color: #504869;
+  border: 1px solid #504869;
+  box-shadow: 1.5px 1.5px 2px #808080;
+}
+
+.data .form button:disabled {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.resetButton {
+  background-color: #dc3545 !important;
+  border: 1px solid #dc3545 !important;
+  margin-top: 10px !important;
+  width: 100% !important;
+}
+
+.resetButton:hover:not(:disabled) {
+  background-color: #c82333 !important;
+  border-color: #bd2130 !important;
+}
+
+.errorContainer {
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.errorMessage {
+  margin-bottom: 5px;
+}
+
+.errorMessage:last-child {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .data {
+    padding: 20px 40px 20px 40px;
+  }
+  
+  .data input {
+    width: 100px;
+  }
+}
